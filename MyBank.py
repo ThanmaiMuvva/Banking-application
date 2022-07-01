@@ -139,6 +139,7 @@ class Application:
         self.label2 = ttk.Label(self.frame4,text = "Amount added successfully" ,background="light blue",font = ('Helvetica bold',15))
         self.label2.pack()
         self.label2.place(x=180,y=160)
+        self.frame4.after(1000,self.loginpage)
         
     def withdrawmoney(self):
         for i in self.master.winfo_children():
@@ -166,6 +167,7 @@ class Application:
         self.label2 = ttk.Label(self.frame6,text = "Amount drawn successfully",background="light blue",font = ('Helvetica bold',15))
         self.label2.pack()
         self.label2.place(x=180,y=160)
+        self.frame6.after(1000,self.loginpage)
 
     def transfermoney(self):
         for i in self.master.winfo_children():
@@ -204,6 +206,7 @@ class Application:
         self.label2 = ttk.Label(self.frame7,text = "Amount transferred successfully",background="light blue",font = ('Helvetica bold',15))
         self.label2.pack()
         self.label2.place(x=180,y=240)
+        self.frame7.after(1000,self.loginpage)
 
     def Create_Account(self):
         for i in self.master.winfo_children():
